@@ -6,12 +6,10 @@ pipeline {
                 docker { image 'maven' }
             }
             steps {
-                sh "mvn package -Dmaven.test.skip=true"                
+                sh "mvn package -Dmaven.test.skip=true"
+                
             }
         }
-        stage('Initialize'){
-            def dockerHome = tool 'myDocker'
-            env.PATH = "${dockerHome}/bin:${env.PATH}"
-         }
-    }     
+    
+    }
 }
