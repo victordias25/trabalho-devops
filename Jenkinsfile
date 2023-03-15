@@ -6,13 +6,13 @@ pipeline {
     stages {
         stage ('Build'){
             steps {
-                bat 'npm install'       
+                sh 'npm install'       
             }
         }  
         stage('Test') {
             steps {
-                bat 'chmod +x ./jenkins/scripts/test.sh'            
-                bat './jenkins/scripts/test.sh'
+                sh 'chmod +x ./jenkins/scripts/test.sh'            
+                sh './jenkins/scripts/test.sh'
             }                
         }
         stage('Deliver for development') {
