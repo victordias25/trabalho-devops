@@ -1,15 +1,28 @@
 pipeline {
-    agent any
-    stages {
-        stage ('Build') {
-            steps{
-                bat 'mvn clean package -DskipTests=true'
-            }            
-        }
-        stage ('Unit Tests') {
-            steps{
-                bat 'mvn test'
-            }            
-        }
+  agent any
+    
+  tools {nodejs "node"}
+    
+  stages {
+        
+    stage('Git') {
+      steps {
+        git 'https://github.com/victordias25/trabalho-devops'
+      }
     }
+     
+    stage('Build') {
+      steps {
+        sh 'npm install'
+         sh '<<Build Command>>'
+      }
+    }  
+    
+            
+    stage('Test') {
+      steps {
+        sh 'node test'
+      }
+    }
+  }
 }
