@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('Build'){
             steps {
-                bat 'cd webapi'
+                sh 'cd .\webapi\ '
                 bat 'npm install'       
             }
         }
