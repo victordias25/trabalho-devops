@@ -10,7 +10,7 @@ pipeline {
             }
         }
     }
-    stage('Teste') {
+    stages ('Teste') {
         steps {
             sh './jenkins/scripts/test.sh'
         }
