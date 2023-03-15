@@ -1,28 +1,13 @@
 pipeline {
-  agent any
+    agent any
     
-  tools {nodejs "node"}
-    
-  stages {
-        
-    stage('Git') {
-      steps {
-        git 'https://github.com/victordias25/trabalho-devops'
-      }
+    tools {nodejs "node"}
+
+    stages {
+        stage ('Build'){
+            steps {
+                bat 'npm install'
+            }
+        }
     }
-     
-    stage('Build') {
-      steps {
-        sh 'npm install'
-         sh '<<Build Command>>'
-      }
-    }  
-    
-            
-    stage('Test') {
-      steps {
-        sh 'node test'
-      }
-    }
-  }
 }
