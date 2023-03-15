@@ -7,8 +7,10 @@ pipeline {
         stage ('Build'){
             steps {
                 bat 'npm install'
-                bat 'npm start'
+                bat 'npm install nodemon'
+                bat 'npm run star'
             }
         }
     }
 }
+
