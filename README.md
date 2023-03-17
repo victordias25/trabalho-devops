@@ -1,5 +1,5 @@
 
-# <h1 align="center"> Trabalho Final - 43SCJ - WEBSERVICES & RESTFUL TECHNOLOGIES </h1>
+# <h1 align="center"> Trabalho Final - 43SCJ - DEVOPS</h1>
 
 # Objetivo do projeto
 
