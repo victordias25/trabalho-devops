@@ -5,11 +5,13 @@
 
 Criar um Pipeline para build e deploy de uma aplicação usando Jenkins. Com front end.
 
+> :construction: Projeto Concluído
+
 # Front End
 
 Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo conforme suas receitas e despesas. Foi feito uma API REST e um Front-End. Com persistência local realizada em arquivo JSON e gestão de dependências usando o NPM.
 
-> :construction: Projeto Concluído
+
   
 ## ✔️ Executando o projeto Front End
 
@@ -50,7 +52,7 @@ Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo 
 
 ## ✔️ Executando Jenkins
 
-    1.  Dentro do diretório jenkins existe um arquivo .bat com as configurações do jenkins para subir.
+    1.  Dentro do diretório jenkins existe um arquivo .bat com as configurações do Jenkins para subir.
     2.  Dentro do diretório baixar o arquivo .war no site do Jenkins. Link: https://get.jenkins.io/war-stable/2.387.1/
     3.  Como o arquivo é grande não deixei dentro do diretório.
     4.  Com o arquivo .war baixado, acesse o diretório com um terminal de sua preferencia e de o seguinte comando: startJenkins.bat
