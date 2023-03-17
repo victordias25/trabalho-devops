@@ -14,6 +14,12 @@ pipeline {
                 git 'https://github.com/victordias25/trabalho-devops'
              }
         }
+        stage('Install dependencies') {
+             steps {
+                bat 'npm install'
+                bat 'npm run bowerInstall'
+         }
+    }
         /*stage('Teste') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'            
