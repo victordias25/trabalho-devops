@@ -9,12 +9,12 @@ pipeline {
                 bat 'npm config ls'
             }
          }
-        /*stage ('Build'){
+        stage ('Build'){
             steps {
                 bat 'npm install'       
             }
         }  
-        stage('Cloning Git') {
+        /*stage('Cloning Git') {
             steps {
                 git 'https://github.com/victordias25/trabalho-devops.git'
              }
