@@ -11,7 +11,7 @@ pipeline {
         }  
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/victordias25/trabalho-devops'
+                git 'https://github.com/victordias25/trabalho-devops.git'
              }
         }
         stage('Install dependencies') {
