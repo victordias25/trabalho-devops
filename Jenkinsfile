@@ -14,12 +14,12 @@ pipeline {
                 bat 'npm install'       
             }
         }  
-        /*stage('Cloning Git') {
+        stage('Cloning Git') {
             steps {
                 git 'https://github.com/victordias25/trabalho-devops.git'
              }
         }
-        stage('Install dependencies') {
+        /*stage('Install dependencies') {
              steps {
                 bat 'npm install'
                 bat 'npm run bowerInstall'
