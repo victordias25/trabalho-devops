@@ -15,11 +15,18 @@ pipeline {
                 bat 'npm install --no-fund core-js'         
             }
         }  
-        stage('Cloning Git') {
+        stage('Install dependencies') {
             steps {
-                git 'https://github.com/victordias25/trabalho-devops.git'
-             }
+                bat 'npm install'
+                bat 'npm run bowerInstall'
+            }
         }
+     
+        stage('Test') {
+            steps {
+                bat 'npm test'
+            }
+        }      
         /*stage('Install dependencies') {
              steps {
                 bat 'npm install'
