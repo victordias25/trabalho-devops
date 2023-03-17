@@ -6,43 +6,23 @@ pipeline {
     stages {
         stage('Exemplo') {
             steps {
-                bat 'npm config ls'
+                sh 'npm config ls'
             }
          }
+
         stage ('Build'){
             steps {
-                bat 'npm install'
+                sh 'npm install'
             }
-        }  
-        stage('Install dependencies') {
-            steps {
-                bat 'npm install'
-                bat 'npm run bowerInstall'
-            }
-        }
+        }    
      
-        stage('Test') {
-            steps {
-                bat 'npm test'
-            }
-        }      
-        /*stage('Install dependencies') {
-             steps {
-                bat 'npm install'
-                bat 'npm run bowerInstall'
-             }
-         }
-        stage('Test') {
-            steps {
-                bat 'npm test'
-            }
-        }
         stage('Teste') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'            
                 sh './jenkins/scripts/test.sh'
             }                
         }
+
         stage('Deliver for development') {
             when {
                 branch 'development'
@@ -54,6 +34,7 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+        
         stage('Deploy for production') {
             steps {
                 sh 'chmod -R +x ./jenkins/scripts'
@@ -61,7 +42,7 @@ pipeline {
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/kill.sh'
             }       
-        } */
+        } 
     }
 }
 
