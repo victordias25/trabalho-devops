@@ -12,7 +12,6 @@ pipeline {
         stage ('Build'){
             steps {
                 bat 'npm install'
-                bat 'npm install --no-fund core-js'         
             }
         }  
         stage('Install dependencies') {
