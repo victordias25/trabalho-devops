@@ -1,13 +1,17 @@
 
-# <h1 align="center"> Trabalho Final - 43SCJ - WEBSERVICES & RESTFUL TECHNOLOGIES </h1>
+# <h1 align="center"> Trabalho Final - 43SCJ - DEVOPS</h1>
 
 # Objetivo do projeto
+
+Criar um Pipeline para build e deploy de uma aplicação usando Jenkins. Com front end.
+
+# Front End
 
 Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo conforme suas receitas e despesas. Foi feito uma API REST e um Front-End. Com persistência local realizada em arquivo JSON e gestão de dependências usando o NPM.
 
 > :construction: Projeto Concluído
   
-## ✔️ Executando o projeto
+## ✔️ Executando o projeto Front End
 
      1. Via terminal pelo Visual Studio Code acessar a pasta webapi do projeto com o comando: cd .\webapi\ 
 
@@ -44,19 +48,19 @@ Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo 
 
 <img src="https://github.com/victordias25/trabalho-fiap-webservices/blob/main/images/4.PNG">
 
-## ✔️ Documentação
+## ✔️ Executando Jenkins
 
- Foi feito a documentação da API via OpenAPI (Swagger). A documentação da API  pode ser acessada através
-    do Link: http://localhost:3000/doc
+## ✔️ Pipelines
 
 ## ✔️ Tecnologias utilizadas
 
 - ``Visual Studio Code``
 - ``JSON``
 - ``HTLM, CSS, JS``
-- ``OpenAPI (Swagger) ``
 - ``Node.js``
 - ``NPM``
+- ``Jenkins``
+- ``Docker``
 
 ## ✔️ Autores
 
