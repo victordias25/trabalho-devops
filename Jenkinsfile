@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
-        stage(‘Example’) {
+        stage('Exemplo') {
             steps {
                 bat 'npm config ls'
             }
