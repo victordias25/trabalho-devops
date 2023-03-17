@@ -1,1 +1,1 @@
-java -jar jenkins.war --httpPort=8000
+java -jar jenkins.war --httpPort=8080
