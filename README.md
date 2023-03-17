@@ -50,7 +50,27 @@ Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo 
 
 ## ✔️ Executando Jenkins
 
+    1.  Dentro do diretório jenkins existe um arquivo .bat com as configurações do jenkins para subir.
+    2.  Dentro do diretório baixar o arquivo .war no site do Jenkins. Link: https://get.jenkins.io/war-stable/2.387.1/
+    3.  Como o arquivo é grande não deixei dentro do diretório.
+    4.  Com o arquivo .war baixado, acesse o diretório com um terminal de sua preferencia e de o seguinte comando: startJenkins.bat
+    5.  Após um tempo o Jenkins ira subir. Use o link para acessar: http://localhost:8080/
+    6.  A senha para acessar o Jenkins pela primeira vez estará no prompt
+    7.  Você também pode subir o Jenkins usando uma imagem Docker.
+    8.  Em seguida instale todos os Plugins e configure o Jenkins.
+    9.  Não esqueça de instalar a extensão do Node JS
+    10. Configure um Job/ Pipilene no Jenkins usando o seguinte projeto do Git: https://github.com/victordias25/trabalho-devops.git
+    11. Como o projeto é público não precisa de credenciais.
+    12. Você também pode fazer um fork do projeto para seu Git.
+    13. Após a configuração acima execute o Job.
+    14. E pronto as pipelines serão executadas.
+    
 ## ✔️ Pipelines
+
+    - ``Build``
+   - `` Teste``
+   - ``Deliver for development``
+   - ``Deploy for production``
 
 ## ✔️ Tecnologias utilizadas
 
