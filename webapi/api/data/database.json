@@ -196,6 +196,15 @@
                 "codigo": "ff94d1418ab6ecbd30ec6de60c66a395",
                 "dataHoraCadastro": "2022-10-10 09:28:35.547",
                 "ativo": false
+            },
+            {
+                "nome": "teste",
+                "valor": 30,
+                "tipo": "D",
+                "dataTransacao": "1992-06-01",
+                "codigo": "12b13eff8da8c910c25911346d78bf8b",
+                "dataHoraCadastro": "2023-03-17 10:20:34.290",
+                "ativo": false
             }
         ]
     }
