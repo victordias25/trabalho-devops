@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Exemplo') {
             steps {
-                bat 'npm config set fund false --location=global'
+                bat 'npm config set fund false'
             }
          }
         stage ('Build'){
