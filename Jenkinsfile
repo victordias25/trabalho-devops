@@ -4,7 +4,12 @@ pipeline {
     tools {nodejs "node"}
 
     stages {
-        stage ('Build'){
+        stage(‘Example’) {
+            steps {
+                sh ‘npm config ls’
+            }
+         }
+        /*stage ('Build'){
             steps {
                 bat 'npm install'       
             }
@@ -25,7 +30,7 @@ pipeline {
                 bat 'npm test'
             }
         }
-        /*stage('Teste') {
+        stage('Teste') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'            
                 sh './jenkins/scripts/test.sh'
