@@ -18,8 +18,13 @@ pipeline {
              steps {
                 bat 'npm install'
                 bat 'npm run bowerInstall'
+             }
          }
-    }
+        stage('Test') {
+            steps {
+                bat 'npm test'
+            }
+        }
         /*stage('Teste') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'            
