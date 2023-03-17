@@ -67,8 +67,8 @@ Desenvolvimento de uma solução para Controle Financeiro. Calculando seu saldo 
     
 ## ✔️ Pipelines
 
-    - ``Build``
-   - `` Teste``
+   - ``Build``
+   - ``Teste``
    - ``Deliver for development``
    - ``Deploy for production``
 
